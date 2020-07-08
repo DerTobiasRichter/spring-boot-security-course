@@ -18,6 +18,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and()
+                //.formLogin(); //View the Form Based Auth behavior - defaut spring behavior
                 .httpBasic();
     }
 
